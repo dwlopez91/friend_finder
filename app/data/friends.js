@@ -153,4 +153,6 @@ var friends = [
         1
       ]
   }
-]
+];
+
+module.exports = friendsArray;
