@@ -3,15 +3,14 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Survey</title>
+    <title>Friendr</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery.js"></script>
-
+    <link href="https://code.jquery.com/jquery-3.1.0.min.js"> 
 </head>
 <body>
     <br>
@@ -24,7 +23,7 @@
             <form>
                 <div class="form-group">
                 <label for="Name">Name (Required)</label>
-                <input type="text" class="form-control" id="nameInput" placeholder="Sam Smith">
+                <input type="text" class="form-control" id="name" placeholder="Sam Smith">
                 </div>
                 <div class="form-group">
                         <label for="Photo">Link to your photo (Optional)</label>
@@ -36,129 +35,130 @@
             </form>
         <div>
             <h3>Question 1</h3>
-            <h4>How much do you love Lacroix?</h4>
-            <select class="custom-select">
+            <h4>Lime LaCroix is the best flavor of LaCroix.</h4>
+            <select class="custom-select" id="q1">
+                    <option selected disabled>Your answer...</option>
                     <option value="1">One Strongly Disagree</option>
                     <option value="2">Two</option>
                     <option value="3">Three Meh</option>
-                    <option value="3">Four</option>
-                    <option value="3">Five Strongly Agree</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five Strongly Agree</option>
                   </select>
                   <br>
                   <br>
                   
             <h3>Question 2</h3>
-            <h4>I only drink Lime-flavored Lacroix.</h4>
-            <select class="custom-select">
-                    <option selected>Your answer</option>
+            <h4>I'm more of a dog person.</h4>
+            <select class="custom-select" id="q2">
+                    <option selected disabled>Your answer...</option>
                     <option value="1">One Strongly Disagree</option>
                     <option value="2">Two</option>
                     <option value="3">Three Meh</option>
-                    <option value="3">Four</option>
-                    <option value="3">Five Strongly Agree</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five Strongly Agree</option>
                   </select>
                   <br>
                   <br>
             <h3>Question 3</h3>
-            <h4>How much do you love Lacroix?</h4>
-            <select class="custom-select">
-                    <option selected>Your answer</option>
+            <h4>We are living in a simulation.</h4>
+            <select class="custom-select" id="q3">
+                    <option selected disabled>Your answer...</option>
                     <option value="1">One Strongly Disagree</option>
                     <option value="2">Two</option>
                     <option value="3">Three Meh</option>
-                    <option value="3">Four</option>
-                    <option value="3">Five Strongly Agree</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five Strongly Agree</option>
                   </select>
                   <br>
                   <br>
             <h3>Question 4</h3>
-            <h4>How much do you love Lacroix?</h4>
-            <select class="custom-select">
-                    <option selected>Your answer</option>
+            <h4>Mariah Carey can still sing (though her voice was never the same post '98).</h4>
+            <select class="custom-select" id="q4">
+                    <option selected disabled>Your answer...</option>
                     <option value="1">One Strongly Disagree</option>
                     <option value="2">Two</option>
                     <option value="3">Three Meh</option>
-                    <option value="3">Four</option>
-                    <option value="3">Five Strongly Agree</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five Strongly Agree</option>
                   </select>
                   <br>
                   <br>
             <h3>Question 5</h3>
-            <h4>How much do you love Lacroix?</h4>
-            <select class="custom-select">
-                    <option selected>Your answer</option>
+            <h4>Whole milk.</h4>
+            <select class="custom-select" id="q5">
+                    <option selected disabled>Your answer...</option>
                     <option value="1">One Strongly Disagree</option>
                     <option value="2">Two</option>
                     <option value="3">Three Meh</option>
-                    <option value="3">Four</option>
-                    <option value="3">Five Strongly Agree</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five Strongly Agree</option>
                   </select>
                   <br>
                   <br>
             <h3>Question 6</h3>
-            <h4>How much do you love Lacroix?</h4>
-            <select class="custom-select">
-                    <option selected>Your answer</option>
+            <h4>There is no ethical consumption under capitalism.</h4>
+            <select class="custom-select" id="q6">
+                    <option selected disabled>Your answer...</option>
                     <option value="1">One Strongly Disagree</option>
                     <option value="2">Two</option>
                     <option value="3">Three Meh</option>
-                    <option value="3">Four</option>
-                    <option value="3">Five Strongly Agree</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five Strongly Agree</option>
                   </select>
                   <br>
                   <br>
             <h3>Question 7</h3>
-            <h4>How much do you love Lacroix?</h4>
-            <select class="custom-select">
-                    <option selected>Your answer</option>
+            <h4>It's "soda" not "pop."</h4>
+            <select class="custom-select" id="q7">
+                    <option selected disabled>Your answer...</option>
                     <option value="1">One Strongly Disagree</option>
                     <option value="2">Two</option>
                     <option value="3">Three Meh</option>
-                    <option value="3">Four</option>
-                    <option value="3">Five Strongly Agree</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five Strongly Agree</option>
                   </select>
                   <br>
                   <br>
             <h3>Question 8</h3>
-            <h4>How much do you love Lacroix?</h4>
-            <select class="custom-select">
-                    <option selected>Your answer</option>
+            <h4>If Beyoncé says jump, you jump.</h4>
+            <select class="custom-select" id="q8">
+                    <option selected disabled>Your answer...</option>
                     <option value="1">One Strongly Disagree</option>
                     <option value="2">Two</option>
                     <option value="3">Three Meh</option>
-                    <option value="3">Four</option>
-                    <option value="3">Five Strongly Agree</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five Strongly Agree</option>
                 </select>
                 <br>
                 <br>
             <h3>Question 9</h3>
-            <h4>How much do you love Lacroix?</h4>
-            <select class="custom-select">
-                    <option selected>Your answer</option>
+            <h4>iPhones > Androids.</h4>
+            <select class="custom-select" id="q9">
+                    <option selected disabled>Your answer...</option>
                     <option value="1">One Strongly Disagree</option>
                     <option value="2">Two</option>
                     <option value="3">Three Meh</option>
-                    <option value="3">Four</option>
-                    <option value="3">Five Strongly Agree</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five Strongly Agree</option>
                     </select>
                     <br>
                     <br>
             <h3>Question 10</h3>
-            <h4>How much do you love Lacroix?</h4>
-            <select class="custom-select">
-                    <option selected>Your answer</option>
+            <h4>April 25th is the perfect date.</h4>
+            <select class="custom-select" id="q10">
+                    <option selected disabled>Your answer...</option>
                     <option value="1">One Strongly Disagree</option>
                     <option value="2">Two</option>
                     <option value="3">Three Meh</option>
-                    <option value="3">Four</option>
-                    <option value="3">Five Strongly Agree</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five Strongly Agree</option>
                   </select>
                   <br>
                   <br>
         </div>
         
         <div>
-            <button type="button" class="btn btn-primary btn-lg btn-block"><i class="fas fa-check-circle"></i>  Submit!</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fas fa-check-circle"></i>  Submit!</button>
             <br>
             <br>
         </div>
@@ -175,8 +175,30 @@
     <br>
     
 </body>
-<script>
 
+    <script> 
+    $("#submit").on("click", function(event) {
+      event.preventDefault();
+    
+        var userData = {
+          name: $("#name").val(),
+          photo: $("#photo").val(),
+          scores: [
+            $("#q1").val(),
+            $("#q2").val(),
+            $("#q3").val(),
+            $("#q4").val(),
+            $("#q5").val(),
+            $("#q6").val(),
+            $("#q7").val(),
+            $("#q8").val(),
+            $("#q9").val(),
+            $("#q10").val()
+          ]
+        };
+        console.log(userData);
+    })
 
-</script>
+  </script>
+
 </html>
